@@ -4,6 +4,8 @@ import com.retalcar.bus.domain.Customer;
 import com.retalcar.bus.vo.CustomerVo;
 import com.retalcar.sys.utils.DataGridView;
 
+import java.util.List;
+
 /**
  * @author laiyunjing
  * @version 1.0
@@ -44,4 +46,11 @@ public interface CustomerService {
      * @return
      */
     public Customer queryCustomerByIdentity(String identity);
+
+    /**
+     * 查询客户数据返回集合
+     * @param customerVo
+     * @return
+     */
+    public List<Customer> queryAllCustomerForList(CustomerVo customerVo);
 }

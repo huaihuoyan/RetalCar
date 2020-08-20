@@ -97,6 +97,7 @@
 			<value>
 				com.retalcar.sys.mapper
 				com.retalcar.bus.mapper
+				com.retalcar.stat.mapper
 			</value>
 		</property>
 		<!-- 注入sqlSessionFactory -->
