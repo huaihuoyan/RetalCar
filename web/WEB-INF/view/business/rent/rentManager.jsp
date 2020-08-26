@@ -95,6 +95,7 @@
     {{#  } else { }}
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="exportRent">导出出租单</a>
     {{#  } }}
 
 
@@ -254,7 +255,9 @@
                 });
             } else if(layEvent === 'edit'){ //编辑
                 openUpdateRent(data);
-            }
+            } else if(layEvent==='exportRent'){
+            window.location.href="${ctx}/stat/exportRent.action?rentid="+data.rentid;
+             }
         });
 
         var url;

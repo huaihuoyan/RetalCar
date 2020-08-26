@@ -18,6 +18,8 @@ public class UserVo extends User {
     // 接收多个角色id
     private Integer[] ids;
 
+    private String code;
+
     public Integer[] getIds() {
         return ids;
     }
@@ -40,5 +42,13 @@ public class UserVo extends User {
 
     public void setLimit(Integer limit) {
         this.limit = limit;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }
